@@ -60,6 +60,12 @@ body {
   border: none;
   cursor: pointer;
 }
+
+.sidebar-board-btn:hover {
+  cursor: pointer;
+  background-color: #635fc7;
+  color: #ccc;
+}
 /* =============================================================================================================*/
 /* -- Main layout Header -- */
 /* Header */
@@ -174,7 +180,10 @@ h2 {
     font-size: 18px;
   }
 
-  .logo {
+  .header-logo {
     display: inline-block;
+    margin-right: 8px;
+    width: 100%;
+    height: 20px;
   }
 }
