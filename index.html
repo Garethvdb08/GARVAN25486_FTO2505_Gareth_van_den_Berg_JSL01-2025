@@ -4,9 +4,6 @@
     <meta />
     <title>JSL01</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-    </style>
   </head>
 
   <body>
@@ -24,53 +21,51 @@
     </nav>
 
     <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
-    <div>
-      <header>
-        <div>
-          <h2>Launch Career</h2>
-        </div>
+    <div class="main-content">
+      <header class="board-header">
+        <h2 class="board-title">Launch Career</h2>
       </header>
 
-      <div>
-        <main>
-          <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
-          <div>
-            <div>
-              <span></span>
-              <h4>TODO</h4>
-            </div>
-            <!-- Tasks container for TODO -->
-            <div>
-              <div>Launch Epic Career 🚀</div>
-              <div>Learn Data Structures and Algorithms 📚</div>
-            </div>
-          </div>
-          <!-- DOING Column -->
-          <div>
-            <div>
-              <span></span>
-              <h4>DOING</h4>
-            </div>
-            <!-- Tasks container for DOING -->
-            <div>
-              <div>Master JavaScript 💛</div>
-              <div>Keep on Going 🏆</div>
-            </div>
-          </div>
-          <!-- DONE Column -->
-          <div>
-            <div>
-              <span></span>
-              <h4>DONE</h4>
-            </div>
-            <!-- Tasks container for DONE -->
-            <div>
-              <div>Contribute to Open Source Projects 🌐</div>
-              <div>Build Portfolio Projects 🛠️</div>
-            </div>
-          </div>
-        </main>
-      </div>
+      <main class="task-board">
+        <!-- TODO Column -->
+        <div class="task-column">
+          <h3 class="column-title">
+            TODO (4)
+            <span class="circle circle-todo"></span>
+          </h3>
+
+          <ul class="task-list">
+            <li>Launch Epic Career 🚀</li>
+            <li>Conquer React ⚛️</li>
+            <li>Understand Databases ⚙️</li>
+            <li>Crush Frameworks 🖼️</li>
+          </ul>
+        </div>
+
+        <!-- DOING Column -->
+        <div class="task-column">
+          <h3 class="column-title">
+            DOING (2) <span class="circle circle-doing"></span>
+          </h3>
+
+          <ul class="task-list">
+            <li>Master JavaScript 💛</li>
+            <li>Never give up🏆</li>
+          </ul>
+        </div>
+
+        <!-- DONE Column -->
+        <div class="task-column">
+          <h3 class="column-title">
+            DONE(2) <span class="circle circle-done"></span>
+          </h3>
+
+          <ul class="task-list">
+            <li>Explore ES6 Features 🚀</li>
+            <li>Have fun 🥳/li></li>
+          </ul>
+        </div>
+      </main>
     </div>
   </body>
 </html>
